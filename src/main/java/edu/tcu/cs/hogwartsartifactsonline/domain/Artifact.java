@@ -13,20 +13,7 @@ public class Artifact implements Serializable {
     private String name;
     private String description;
     private String imageUrl;
-    @ManyToOne
     @JsonIgnore
-    private Wizard owner;
-
-    public Artifact() {
-    }
-
-    public Wizard getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Wizard owner) {
-        this.owner = owner;
-    }
 
     public String getId() {
         return id;
